@@ -55,110 +55,110 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.disabledBorderColor"));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton7.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton7.setForeground(new java.awt.Color(51, 51, 51));
         jButton7.setText("7");
         jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton7.setBorderPainted(false);
-        jButton7.setOpaque(true);
+        jButton7.setContentAreaFilled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
-        jButton18.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton18.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton18.setForeground(new java.awt.Color(51, 51, 51));
         jButton18.setText(")");
         jButton18.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton18.setBorderPainted(false);
-        jButton18.setOpaque(true);
+        jButton18.setContentAreaFilled(false);
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
             }
         });
 
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton8.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton8.setForeground(new java.awt.Color(51, 51, 51));
         jButton8.setText("8");
         jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton8.setBorderPainted(false);
-        jButton8.setOpaque(true);
+        jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
-        jButton19.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton19.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton19.setForeground(new java.awt.Color(51, 51, 51));
         jButton19.setText("(");
-        jButton19.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton19.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton19.setBorderPainted(false);
-        jButton19.setOpaque(true);
+        jButton19.setContentAreaFilled(false);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
             }
         });
 
-        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton9.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton9.setForeground(new java.awt.Color(51, 51, 51));
         jButton9.setText("9");
         jButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton9.setBorderPainted(false);
-        jButton9.setOpaque(true);
+        jButton9.setContentAreaFilled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
 
-        jButton20.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton20.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton20.setForeground(new java.awt.Color(51, 51, 51));
         jButton20.setText("C");
         jButton20.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton20.setBorderPainted(false);
-        jButton20.setOpaque(true);
+        jButton20.setContentAreaFilled(false);
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
 
-        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton10.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton10.setForeground(new java.awt.Color(51, 51, 51));
         jButton10.setText("0");
         jButton10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton10.setBorderPainted(false);
-        jButton10.setOpaque(true);
+        jButton10.setContentAreaFilled(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
 
-        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(51, 51, 51));
+        jButton11.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(0, 51, 255));
         jButton11.setText("+");
         jButton11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton11.setBorderPainted(false);
-        jButton11.setOpaque(true);
+        jButton11.setContentAreaFilled(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("1");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setBorderPainted(false);
-        jButton1.setOpaque(true);
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -170,142 +170,143 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(51, 51, 51));
+        jButton12.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(0, 51, 255));
         jButton12.setText("-");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton12.setBorderPainted(false);
-        jButton12.setOpaque(true);
+        jButton12.setContentAreaFilled(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("2");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.setBorderPainted(false);
-        jButton2.setOpaque(true);
+        jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(51, 51, 51));
+        jButton13.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(0, 51, 255));
         jButton13.setText("=");
         jButton13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton13.setBorderPainted(false);
-        jButton13.setOpaque(true);
+        jButton13.setContentAreaFilled(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton3.setForeground(new java.awt.Color(51, 51, 51));
         jButton3.setText("3");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setBorderPainted(false);
-        jButton3.setOpaque(true);
+        jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(51, 51, 51));
+        jButton14.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(0, 51, 255));
         jButton14.setText("/");
         jButton14.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton14.setBorderPainted(false);
-        jButton14.setOpaque(true);
+        jButton14.setContentAreaFilled(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton4.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton4.setForeground(new java.awt.Color(51, 51, 51));
         jButton4.setText("4");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.setBorderPainted(false);
-        jButton4.setOpaque(true);
+        jButton4.setContentAreaFilled(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(51, 51, 51));
+        jButton15.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(0, 51, 255));
         jButton15.setText("x");
         jButton15.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton15.setBorderPainted(false);
-        jButton15.setOpaque(true);
+        jButton15.setContentAreaFilled(false);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
             }
         });
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton5.setForeground(new java.awt.Color(51, 51, 51));
         jButton5.setText("5");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.setBorderPainted(false);
-        jButton5.setOpaque(true);
+        jButton5.setContentAreaFilled(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton16.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton16.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton16.setForeground(new java.awt.Color(51, 51, 51));
         jButton16.setText("D");
         jButton16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton16.setBorderPainted(false);
-        jButton16.setOpaque(true);
+        jButton16.setContentAreaFilled(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
             }
         });
 
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton6.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton6.setForeground(new java.awt.Color(51, 51, 51));
         jButton6.setText("6");
         jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.setBorderPainted(false);
-        jButton6.setOpaque(true);
+        jButton6.setContentAreaFilled(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
 
-        jButton17.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton17.setFont(new java.awt.Font("JetBrains Mono", 0, 28)); // NOI18N
         jButton17.setForeground(new java.awt.Color(51, 51, 51));
         jButton17.setText(".");
         jButton17.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton17.setBorderPainted(false);
-        jButton17.setOpaque(true);
+        jButton17.setContentAreaFilled(false);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 22)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
+        jLabel2.setFont(new java.awt.Font("JetBrains Mono", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -315,8 +316,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel1Layout.createSequentialGroup()
@@ -366,15 +367,15 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(36, Short.MAX_VALUE)
+                .addContainerGap(73, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -406,24 +407,18 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19))
+                .addGap(51, 51, 51))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -646,10 +641,10 @@ public class NewJFrame extends javax.swing.JFrame {
 
         private void makeTextBig(boolean big){
         if(big){
-            jLabel1.setFont(new Font("Segoe UI", Font.PLAIN, 50));
+            jLabel1.setFont(new Font("JetBrains Mono", Font.PLAIN, 36));
         }
         if(!big){
-            jLabel1.setFont(new Font("Segoe UI", Font.PLAIN, 28));
+            jLabel1.setFont(new Font("JetBrains Mono", Font.PLAIN, 25));
         }
     }
 
