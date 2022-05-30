@@ -53,6 +53,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Lets Calculate");
         setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -302,7 +303,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("JetBrains Mono", 0, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
@@ -564,7 +565,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     if(StringFormation.input_string.length()>1){
                         StringFormation.p=StringFormation.input_string.charAt(StringFormation.input_string.length()-1);
                     }
-
+                    makeTextBig(false);
                     jLabel1.setText(StringFormation.input_string);
                 }        // TODO add your handling code here:
     }//GEN-LAST:event_jButton16ActionPerformed
@@ -640,13 +641,40 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
-        private void makeTextBig(boolean big){
+        private void makeTextBig(Boolean b){
+        /*
         if(big){
             jLabel1.setFont(new Font("JetBrains Mono", Font.PLAIN, 28));
         }
         if(!big){
             jLabel1.setFont(new Font("JetBrains Mono", Font.PLAIN, 25));
         }
+        */
+        
+        int x=StringFormation.input_string.length();
+        double fontSize; int intFontSize;
+        if(x<9){
+            if(b){
+            fontSize=48;
+            }
+            else{
+                fontSize=37;
+            }
+        }
+        else if(x>8 && x<13){
+            fontSize=48-1.2*x;
+        }
+        else if(x>12 && x<25){
+            fontSize=48-1.4*x;
+        }
+        else if(x>24 && x<28){
+            fontSize=48-1.3*x;
+        }
+        else{
+            fontSize=12;
+        }
+        intFontSize=(int)fontSize;
+        jLabel1.setFont(new Font("JetBrains Mono",Font.PLAIN, intFontSize));
     }
 
 }
