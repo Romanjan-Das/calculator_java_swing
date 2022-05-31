@@ -31,7 +31,7 @@ public class StringFormation{
             equal_is_pressed=false;
         }
         c=x;
-       // Log.d("mytag",Character.toString(x));
+        //Log.d("mytag",Character.toString(x));
                 if(no_key_pressed){ // run this -> if no char is entered previously, only allow (,- and numbers
                     if(c==LB||c==MI||cn(c)){
                         p=c;
@@ -55,10 +55,10 @@ public class StringFormation{
                 if(c!=EQ && allow){ // run this -> if elligibility of c wrt p is checked
                     p=c;
                     input_string=input_string+c;
-                   // Log.d("mytag",input_string);
+                    //Log.d("mytag",input_string);
                 }
                 else if(c==EQ && rbn==lbn && allow){ // displays the input_string
-                   // Log.d("mytag",rbn+","+lbn);
+                    //Log.d("mytag",rbn+","+lbn);
                     try{
                         EvaluateString.steps=input_string;
                         result=EvaluateString.evaluate_string(input_string);

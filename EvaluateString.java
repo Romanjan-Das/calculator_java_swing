@@ -1,4 +1,7 @@
 //package com.romanjandas.calculatorwithsteps;
+
+//import android.util.Log;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,20 +24,22 @@ public class EvaluateString{
         private static String temp_equation="random_temp_equation";
 
         public static String steps="";
+        public static boolean number_too_large=false;
+        private static int number_max_size=15;
   
     public static String evaluate_string(String s){
         while(!temp_equation.equals(s)){
             temp_equation=s;
 
-           // Log.d("mytag", "\nstep 1: " + s);
+            //Log.d("mytag", "\nstep 1: " + s);
             process_string=look_for_brackets(s);
 
-           // Log.d("mytag", "step 3: " + process_string);
+            //Log.d("mytag", "step 3: " + process_string);
             process_of_evaluation_of_simple_string();
             s=left_of_equation+answer+right_of_equation;
             left_of_equation="";right_of_equation="";
-           // Log.d("mytag", "step 4: " + answer);
-           // Log.d("mytag", "step 5: " + s);
+            //Log.d("mytag", "step 4: " + answer);
+            //Log.d("mytag", "step 5: " + s);
             //steps=steps+"\n"+s;
             if(answer.equals(s)){
                 break;
@@ -44,6 +49,7 @@ public class EvaluateString{
     }
 
     private static void process_of_evaluation_of_simple_string(){
+        process_string=simplifyString(process_string);
         while(temp_string!=process_string){
             temp_string=process_string;
             checkForMultiplyOrDivisionSign(process_string);        
@@ -104,24 +110,48 @@ public class EvaluateString{
             leftOfResult=process_string.charAt(k)+leftOfResult;
             k=k-1;
         }
-        leftNumber=Double.parseDouble(leftString);
-        rightNumber=Double.parseDouble(rightString);
-        if(operator){
-            resultNumber=leftNumber/rightNumber;
-                    process_string=leftOfResult+String.format("%.5f",resultNumber)+rightOfResult;
-                    Matcher m=p.matcher(simplifyString(left_of_equation+leftOfResult+String.format("%.5f",resultNumber)+rightOfResult+right_of_equation));
-                    if(!ZERO.equals(m.replaceAll(DEC_REP))){
-                        steps=steps+"\n"+m.replaceAll(DEC_REP);
-                    }
-
+        //Log.d("mytag",leftString+" <-leftstring, "+rightString+" <-rightString, "+Double.parseDouble(rightString)+" <-rightNumber");
+        if(len_of_num(leftString)>number_max_size || len_of_num(rightString)>number_max_size){
+            number_too_large=true;
+            //Log.d("mytag","number too large-> "+leftString+","+rightString+",len_of_num:"+len_of_num(leftString)+", "+len_of_num(rightString));
         }
-        if(!operator){
-            resultNumber=leftNumber*rightNumber;
-                    process_string=leftOfResult+String.format("%.5f",resultNumber)+rightOfResult;
-                    Matcher m=p.matcher(simplifyString(left_of_equation+leftOfResult+String.format("%.5f",resultNumber)+rightOfResult+right_of_equation));
-                    if(!ZERO.equals(m.replaceAll(DEC_REP))){
-                        steps=steps+"\n"+m.replaceAll(DEC_REP);
-                    }
+        else{
+            leftNumber=Double.parseDouble(leftString);
+            rightNumber=Double.parseDouble(rightString);
+            if(operator){
+                resultNumber=leftNumber/rightNumber;
+                process_string=leftOfResult+String.format("%.5f",resultNumber)+rightOfResult;
+                Matcher m=p.matcher(simplifyString(left_of_equation+leftOfResult+String.format("%.5f",resultNumber)+rightOfResult+right_of_equation));
+                if(!ZERO.equals(m.replaceAll(DEC_REP))){
+                    steps=steps+"\n"+m.replaceAll(DEC_REP);
+                }
+
+            }
+            if(!operator){
+                resultNumber=leftNumber*rightNumber;
+                process_string=leftOfResult+String.format("%.5f",resultNumber)+rightOfResult;
+                Matcher m=p.matcher(simplifyString(left_of_equation+leftOfResult+String.format("%.5f",resultNumber)+rightOfResult+right_of_equation));
+                if(!ZERO.equals(m.replaceAll(DEC_REP))){
+                    steps=steps+"\n"+m.replaceAll(DEC_REP);
+                }
+            }
+        }
+
+    }
+
+    private static int len_of_num(String x){
+        int y=x.length(); int j=0;
+        for(int i=0;i<y;i++){
+            if(x.charAt(i)=='.'){
+                j=i;
+            }
+        }
+
+        if(j==0){
+            return y;
+        }
+        else{
+            return j;
         }
     }
 
@@ -177,8 +207,14 @@ public class EvaluateString{
         while(i!=-1){
             str=s.charAt(i)+str;
             if(MINUS==s.charAt(i) || PLUS==s.charAt(i) || i==0){
-                num=Double.parseDouble(str)+num;
-                str="";
+                if(len_of_num(str)>number_max_size){
+                    number_too_large=true;
+                    //Log.d("mytag","number to large -> "+str+",len_of_num:"+len_of_num(str));
+                }
+                else{
+                    num=Double.parseDouble(str)+num;
+                    str="";
+                }
             }
             i=i-1;
         }
@@ -190,7 +226,7 @@ public class EvaluateString{
             if(answer.charAt(f)=='.'){
                 Matcher m2=p2.matcher(temp);
                 temp=m2.replaceAll(DEC_REP);
-               // Log.d("mytag",temp+"  <- temp");
+                //Log.d("mytag",temp+"  <- temp");
                 break;
             }
             f=f-1;
@@ -212,11 +248,11 @@ public class EvaluateString{
             tempx=answer.charAt(f)+tempx;
             f=f-1;
         }
-       // Log.d("mytag",tempx+"  <--tempx");
+        //Log.d("mytag",tempx+"  <--tempx");
         answer=tempx+temp;
         */
         answer=temp;
-       // Log.d("mytag",answer+"  <-answer");
+        //Log.d("mytag",answer+"  <-answer");
         //Matcher m2=p2.matcher(answer);
         //answer=m2.replaceAll(DEC_REP);
     }
@@ -260,7 +296,7 @@ public class EvaluateString{
             a++;
             midStr=midStr+s.charAt(a);
         }
-       // Log.d("mytag", "step 2: " + leftStr + "   " + midStr + "   " + rightStr);
+        //Log.d("mytag", "step 2: " + leftStr + "   " + midStr + "   " + rightStr);
         left_of_equation=leftStr;
         right_of_equation=rightStr;
         return midStr;

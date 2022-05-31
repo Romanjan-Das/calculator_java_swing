@@ -469,7 +469,20 @@ public class NewJFrame extends javax.swing.JFrame {
         }
         if(!StringFormation.result.equals("")){
             //textView.setText(StringFormation.result);
-            jLabel1.setText(StringFormation.input_string);
+            if(EvaluateString.number_too_large){
+                        jLabel1.setText("Number too large");
+
+                        StringFormation.no_key_pressed=true;
+                        StringFormation.allow=false;
+                        StringFormation.input_string="";
+                        EvaluateString.steps="";
+                        jLabel2.setText("");
+
+                        EvaluateString.number_too_large=false;
+                    }
+                    else{
+                        jLabel1.setText(StringFormation.input_string);
+                    }
             EvaluateString.steps="";
             StringFormation.equal_is_pressed=true;
                 } 
@@ -651,7 +664,13 @@ public class NewJFrame extends javax.swing.JFrame {
         }
         */
         
-        int x=StringFormation.input_string.length();
+        int x; String tooLarge="Number too large";
+        if(EvaluateString.number_too_large){
+            x=tooLarge.length();
+        }
+        else{
+            x=StringFormation.input_string.length();
+        }
         double fontSize; int intFontSize;
         if(x<9){
             if(b){
